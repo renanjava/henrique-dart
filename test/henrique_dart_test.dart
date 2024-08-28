@@ -17,12 +17,23 @@ void main() {
     expect(contaFisica.extratoSaldo(), 100);
   });
 
-  test('transferirValores', () {
+  test('transferirValores1', () {
     ContaFisica contaFisica = new ContaFisica("000.000.000-00");
     ContaJuridica contaJuridica = new ContaJuridica("000.000.000-00");
 
     contaJuridica.resgatarValor(100);
     contaJuridica.transferirValor(contaFisica, 50);
+
+    expect(contaFisica.extratoSaldo(), 50);
+    expect(contaJuridica.extratoSaldo(), 50);
+  });
+
+  test('transferirValores2', () {
+    ContaFisica contaFisica = new ContaFisica("000.000.000-00");
+    ContaJuridica contaJuridica = new ContaJuridica("000.000.000-00");
+
+    contaFisica.resgatarValor(100);
+    contaFisica.transferirValor(contaJuridica, 50);
 
     expect(contaFisica.extratoSaldo(), 50);
     expect(contaJuridica.extratoSaldo(), 50);
