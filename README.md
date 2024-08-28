@@ -1,2 +1,2 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+atividade da faculdade onde eu preciso usar o conceito Generics e realizar testes unitários para comprovar que funciona. A regra de negócio deve ser conta bancária
+
